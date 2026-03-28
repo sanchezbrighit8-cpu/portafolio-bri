@@ -151,6 +151,21 @@
   transform: scale(1.2);
 }
 
+/* ================= MENU HAMBURGUESA ================= */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #a78bfa;
+}
+
+footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      color: #64748b;
+    }
+
  /* NUEVO: efecto overlay en imágenes de proyectos */
 .card {
   position: relative;
@@ -180,7 +195,14 @@
 }
 
 /* ================= RESPONSIVE (MÓVILES / ANDROID) ================= */
-@media (max-width: 768px) {
+@media(max-width: 768px){
+
+  nav a {
+    margin: 10px 0;
+    display: block;
+  }
+
+
   header {
     padding: 15px 20px;
   }
