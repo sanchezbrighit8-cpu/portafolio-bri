@@ -10,3 +10,9 @@ function cerrarModal() {
 function toggleMenu() {
   document.getElementById('nav-menu').classList.toggle('active');
 }
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js")
+    .then(() => console.log("PWA instalada"))
+    .catch(err => console.log("Error:", err));
+}
