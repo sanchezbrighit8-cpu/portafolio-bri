@@ -6,3 +6,7 @@ function abrirModal(src) {
 function cerrarModal() {
   document.getElementById('modal').classList.remove('active');
 }
+
+function toggleMenu() {
+  document.getElementById('nav-menu').classList.toggle('active');
+}
