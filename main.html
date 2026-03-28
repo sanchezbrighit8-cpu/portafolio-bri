@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Brighit Sanchez</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+
+<header>
+  <h1>Portafolio Profesional</h1>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#sobre">Sobre mí</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<section id="inicio" class="hero">
+  <h2>Brighit Miluska Sanchez Andrade </h2>
+  <p>Egresada de Ingenieria de Sistemas en la Universidad Cesar Vallejo</p>
+  <img src="img/ucv.webp" alt="Imagen principal" class="hero-img">
+</section>
+
+<section id="sobre">
+  <h2>Sobre mí</h2>
+  <div class="about-container">
+    <img src="img/brighit.jpeg" alt="Mi foto">
+    <p>Soy desarrolladora de software con experiencia en la creación de soluciones digitales orientadas a la
+optimización de procesos y la toma de decisiones. He desarrollado páginas web y plataformas
+dinámicas, así como sistemas internos para el seguimiento de producción y gestión de información,
+mejorando la comunicación y eficiencia operativa. Además, cuento con experiencia en Business
+Intelligence mediante el diseño de dashboards en Power BI, integración de datos desde diversas
+fuentes (PHP, MySQL, AWS) y automatización de flujos de información. También he trabajado en el
+desarrollo de aplicaciones móviles y de escritorio, y poseo un manejo avanzado de Microsoft Excel
+para el análisis y gestión de datos, lo que me permite aportar soluciones completas, prácticas y
+enfocadas en resultados.</p>
+  </div>
+</section>
+
+<section id="proyectos">
+  <h2>Experiencia & Proyectos</h2>
+  <div class="cards">
+
+    <div class="card">
+      <img src="img/cordon_de_oro.jpeg" onclick="abrirModal(this.src)">
+      <h3>Cordón de Oro (Empresa Textil)</h3>
+      <p><strong>Desarrolladora de Software Interna | 2025</strong></p>
+      <p>Web informativa y sistema interno de producción con registro de prendas, indicadores de rendimiento y comunicación en tiempo real.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/doonobenji.jpeg" onclick="abrirModal(this.src)">
+      <h3>Doono-Benji Cafetería</h3>
+      <p><strong>Desarrolladora Web Freelance | 2025</strong></p>
+      <p>Plataforma web dinámica con catálogos en tiempo real y diseño moderno adaptable a móviles.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/devioz.jpeg" onclick="abrirModal(this.src)">
+      <h3>Devioz S.A.C (BI)</h3>
+      <p><strong>Desarrolladora de Soluciones BI | 2025</strong></p>
+      <p>Dashboards en Power BI, integración PHP/MySQL/AWS y optimización de consultas SQL.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/falabella_app.jpeg" onclick="abrirModal(this.src)">
+      <h3>App - Falabella</h3>
+      <p><strong>Aplicación Móvil | 2025</strong></p>
+      <p>Lectura de CSV, RecyclerView, WebView y visualización de datos en Android Studio.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/colegio_asis.jpeg" onclick="abrirModal(this.src)">
+      <h3>Colegio Asis – Chaclacayo</h3>
+      <p><strong>Soluciones BI | 2025</strong></p>
+      <p>Dashboards, app de escritorio y módulo de registro psicopedagógico.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/rimac.jpeg" onclick="abrirModal(this.src)">
+      <h3>Rimac S.A.C</h3>
+      <p><strong>Excel Avanzado | 2025</strong></p>
+      <p>Tablas dinámicas, automatización y optimización de datos para decisiones.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <span class="cerrar" onclick="cerrarModal()">&times;</span>
+  <img id="imagenModal">
+</div>
+
+<!-- HABILIDADES -->
+<section id="habilidades">
+  <h2>Habilidades Técnicas</h2>
+  <div class="cards">
+
+    <div class="card">
+      <h3>Lenguajes</h3>
+      <p>HTML, JavaScript, PHP, SQL, NoSQL</p>
+    </div>
+
+    <div class="card">
+      <h3>Bases de Datos</h3>
+      <p>MySQL, SQL Server</p>
+    </div>
+
+    <div class="card">
+      <h3>Herramientas</h3>
+      <p>Power BI, Android Studio, Unity, Figma, Bizagi, Cinema 4D, Visual Studio Code, NetBeans IDE, Cisco Packet Tracer</p>
+    </div>
+
+    <div class="card">
+      <h3>Desarrollo y Diseño</h3>
+      <p>Diseño Web, Metodologías Ágiles (Scrum)</p>
+    </div>
+
+    <div class="card">
+      <h3>Datos</h3>
+      <p>Big Data, ETL, Analítica, Gestión y calidad de datos, Ciclo de vida de datos</p>
+    </div>
+
+    <div class="card">
+      <h3>Ofimática</h3>
+      <p>Excel, Word, PowerPoint (nivel avanzado)</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p>Email: sanchezbrighit8@gmail.com</p>
+  <p>Teléfono: 945803997</p>
+</section>
+
+<footer>
+  <p>© 2026 - todos los derechos reservados</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
